@@ -1,0 +1,37 @@
+body{
+}
+
+.container{
+	display: flex;
+}
+
+.nav {
+	background: #f4f4f4;
+
+ text-align: center;
+}
+
+.div_login {
+	background: #f4f4f4;
+	width: 50%;
+}
+
+.div_cadastro {
+	width: 50%;
+}
+
+.div_registro {
+	width: 75%;
+}
+
+.div_perfil {
+	width: 25%;
+}
+
+.div_feed {
+	width: 50%;
+}
+
+.div_busca{
+	width: 25%;
+}
