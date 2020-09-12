@@ -19,45 +19,41 @@
 
 <div class="div_registro"><!--Feed-->
 
-	<form>
+	<form method="post" action="include_registro.php" id="formRegistro">
 		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="Nome" required="requiored">
+			<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required="requiored">
 		</div>
 
 		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="E-mail" required="requiored">
+			<input type="text" class="form-control" id="email" name="email" placeholder="E-mail" required="requiored">
 		</div>
 
 		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="Telefone" required="requiored">
+			<input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" required="requiored">
 		</div>
 
 		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="Uf" required="requiored">
+			<input type="text" class="form-control" id="uf" name="uf" placeholder="Uf" required="requiored">
 		</div>
 
 		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="Cidade" required="requiored">
+			<input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" required="requiored">
 		</div>
 
 		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="Bairro" required="requiored">
+			<input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro" required="requiored">
 		</div>
 
 		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="Tipo do equipameto" required="requiored">
+			<input type="text" class="form-control" id="tipo" name="tipo" placeholder="Tipo do equipameto" required="requiored">
 		</div>
 
 		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="Marca do equipamento" required="requiored">
+			<input type="text" class="form-control" id="marca" name="marca" placeholder="Marca do equipamento" required="requiored">
 		</div>
 
 		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="Data da compra do equipamento danificado" required="requiored">
-		</div>
-
-		<div class="form-group">
-			<input type="text" class="form-control" id="" name="" placeholder="Descrição do defeito" required="requiored">
+			<input type="text" class="form-control" id="defeito" name="defeito" placeholder="Descrição do defeito" required="requiored">
 		</div>
 					
 		<button type="submit" class="btn btn-primary form-control">Registrar</button>
