@@ -1,7 +1,7 @@
 <?php 
 session_start();
 ?>
-
+ 
 <!DOCTYPE html> 
 <html>
 <head>
@@ -77,13 +77,13 @@ session_start();
 
 	<div id="equips" class="list-group">
 		
-		<a href="detalhes_registro.php" class = " list-group-item div_equip">	
+		<!--<a href="detalhes_registro.php" class = " list-group-item div_equip">	
 		<h4 class = "list-group-item-heading">Furadeira Makita</h4>
 		<p class = "list-group-item-text">Cliente: Roberto Cavalcante</p>
 		<p class = "list-group-item-text">Recepcionista: Abelardo Correa</p>
 		<small>Ultima atualização - 10/09/20</small>
 		<p class = "list-group-item-text">STATUS: aberto</p>	
-		</a>
+		</a>-->
 		
 	</div>
 

@@ -7,7 +7,7 @@
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();	
 
-	$sql= "SELECT DATE_FORMAT(registros.data,'%d %b %Y %T') AS data_inclusao_formatada, registros.nome, registros.tipo FROM `registros` WHERE 1 ORDER BY data DESC";
+	$sql= "SELECT DATE_FORMAT(registros.data,'%d %b %Y %T') AS data_inclusao_formatada, registros.nome, registros.tipo,registros.id FROM `registros` WHERE 1 ORDER BY data DESC";
 
 
 	$resultado_id = mysqli_query($link, $sql);
@@ -16,13 +16,16 @@
  
 		while($registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)){
 
-			 echo '<a href="detalhes_registro.php" class = " list-group-item div_equip">';
+			 echo '<form method="post" action="detalhes_registro.php" class = "list-group-item">';
 			 echo '<h4 class = "list-group-item-heading">'.$registro['tipo'].'</h4>';
+			 echo '<input type="hidden" name="id" id="id" value="'.$registro['id'].'">';
 			 echo '<p class = "list-group-item-text">'.$registro['nome'].'</p>';
+			 echo '<p class = "list-group-item-text">'.$registro['id'].'</p>';
 			 echo '<p class = "list-group-item-text"> Recepcionista: '.$registro['nome'].'</p>';
 			 echo '<small> Ultima Att - '.$registro['data_inclusao_formatada'].'</small>';
 			 echo '<p class = "list-group-item-text"> Status = '.$registro['nome'].'</p>';
-			 echo'</a>';
+			 echo '<button type="buttom">Detalhes</button>';
+			 echo'</form>';
 
 		}
 
