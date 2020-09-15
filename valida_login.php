@@ -7,7 +7,7 @@
 	$cod_funcionario = $_POST['campo_usuario'];
 	$senha =md5( $_POST['campo_senha']);
 
-	$sql = " SELECT id, codigo, email FROM funcionarios WHERE codigo = '$cod_funcionario' AND senha = '$senha'";
+	$sql = " SELECT id, codigo, email, nome, cargo FROM funcionarios WHERE codigo = '$cod_funcionario' AND senha = '$senha'";
 
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
@@ -18,13 +18,25 @@
 		$dados_usuario = mysqli_fetch_array($resultado_id);
 
 		if(isset($dados_usuario['codigo'])){
+		#	$cargo[1] = "Recepção";
+		#	$cargo[2] = "Manutenção";
 
 			$_SESSION['id_usuario'] = $dados_usuario['id'];
-			$_SESSION['usuario'] = $dados_usuario['codigo'];
+			$_SESSION['codigo'] = $dados_usuario['codigo'];
+			$_SESSION['nome'] = $dados_usuario['nome'];
 			$_SESSION['email'] = $dados_usuario['email'];
+
+			if($dados_usuario['cargo'] == 1){
+				$_SESSION['cargo'] = "Recepção";
+			}
+			else {
+				$_SESSION['cargo'] = "Manutenção";
+			}
+
+
 			header('Location: registros.php');
 		}else{
-			header('Location: index.php?erro=1');
+			header('Location: index.php?erro_usuario=1');
 		}
 	}
 	else{

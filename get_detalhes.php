@@ -18,7 +18,7 @@
 
 		while($registro = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)){
 
-			echo '<div class="detalhes">';
+			echo '<div class="detalhes  list-group-item">';
 			echo '<h4>'.$registro['tipo'].'</h4>';
 			echo '<p>Cliente: '.$registro['nome'].'</p>';
 			echo '<p>Email: '.$registro['email'].'</p>';
@@ -30,7 +30,21 @@
 			echo '<p>Marca: '.$registro['marca'].'</p>';
 			echo '<p>Descrição: '.$registro['defeito'].'</p>';
 			echo '<p>Ultima Atualização: '.$registro['date_att'].'</p>';
-			echo '<p>STATUS: FALTA IMPLANTAR AINDA</p>';
+
+			if($registro['status'] == 1){
+			 	$status_string = "Em Aberto";
+			 }
+			 else if($registro['status'] == 2){
+			 	$status_string = "Em Andamento";
+			 }
+			 else if ($registro['status'] == 3) {
+			 	$status_string = "Finalizado";
+			 }
+			 else{
+			 	$status_string = "Error";
+			 }
+
+			echo '<p>STATUS: '.$status_string.'</p>';
 			echo '</div>';
 
 		}

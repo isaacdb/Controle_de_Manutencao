@@ -1,6 +1,8 @@
 <?php 
 	session_start();
 
+
+
 	require_once('db.class.php');
 
 $nome = $_POST['nome'];
@@ -12,11 +14,12 @@ $bairro = $_POST['bairro'];
 $tipo = $_POST['tipo'];
 $marca = $_POST['marca'];
 $defeito = $_POST['defeito'];
+$recepcionista = $_SESSION['nome'];
 
 	$objDb = new db();
 	$link = $objDb->conecta_mysql();
 
-	$sql = " insert into registros(nome, email, telefone, uf, cidade, bairro, tipo, marca, defeito) values('$nome', '$email','$telefone', '$uf', '$cidade', '$bairro', '$tipo', '$marca', '$defeito')";
+	$sql = " insert into registros(nome, email, telefone, uf, cidade, bairro, tipo, marca, defeito, recepcionista) values('$nome', '$email','$telefone', '$uf', '$cidade', '$bairro', '$tipo', '$marca', '$defeito', '$recepcionista')";
 
 	if(mysqli_query($link, $sql)){
 		header('Location: registros.php');

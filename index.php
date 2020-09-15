@@ -77,11 +77,11 @@
 	Logar
 	<form method="post" action="valida_login.php">
 		<div class="form-group">
-			<input type="text" class="form-control" id="campo_usuario" name="campo_usuario" placeholder="Cod. Funcionario" />
+			<input type="text" class="form-control" id="campo_usuario" name="campo_usuario" placeholder="Cod. Funcionario" required="requiored" />
 		</div>
 								
 		<div class="form-group">
-			<input type="password" class="form-control red" id="campo_senha" name="campo_senha" placeholder="Senha" />
+			<input type="password" class="form-control red" id="campo_senha" name="campo_senha" placeholder="Senha" required="requiored" />
 		</div>
 								
 		<button type="buttom" class="btn btn-primary" id="btn_login">Entrar</button>

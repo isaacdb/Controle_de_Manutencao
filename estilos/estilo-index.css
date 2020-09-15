@@ -22,6 +22,7 @@ body{
 
 .div_registro {
 	width: 75%;
+	display: block;
 	border: 1px solid red;
 
 }
@@ -38,5 +39,4 @@ body{
 	width: 25%;
 }
 .detalhes {
-	display: flex;
 }

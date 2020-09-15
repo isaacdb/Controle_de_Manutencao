@@ -1,5 +1,10 @@
 <?php 
 session_start();
+
+	if(!isset($_SESSION['codigo'])){
+		header('Location: index.php?erro_usuario=1');
+	}
+
 ?>
  
 <!DOCTYPE html> 
@@ -50,13 +55,13 @@ session_start();
 <div class="div_perfil" ><!--Perfil-->
 	<div class="panel panel-default">
 	<div class="panel-body">
-	<h4>Isaac Debiasi</h4>
+	<h4><?= $_SESSION['nome']?></h4>
 	<div>
 		Cargo: 
-		<span>Recepcionista</span>
+		<span><?= $_SESSION['cargo']?></span>
 	</div>
 	<br>
-	<div>Código de funcionario</div>
+	<div>Codigo de funcionario <?= $_SESSION['codigo']?></div>
 	</div>
 	</div>
 
@@ -68,7 +73,7 @@ session_start();
 	</div>
 	</div>
 
-	<button id="btn_att" type="button">Att</button>
+<a href="logout.php">Logout</a>
 
 
 </div><!--//Perfil-->
@@ -92,15 +97,29 @@ session_start();
 <div class="div_busca"><!--Busca-->
 	<div class="panel panel-default">
 		<div class="panel-body">
-			<input type="text" name="busca">
-			<a href="#">Buscar</a>
-			<br>
-			<select name="cargo_busca" id="cargo_busca">
-                <option value="">Seleciona uma opção</option>
-				<option>Na Espera</option>
-				<option>Em Andamento</option>
-				<option>Finalizado</option>
+				<h4>Secção de busca</h4>
+
+			<form action="pag_busca.php" method="post">
+
+			<select name="status" id="status" class="form-control">
+                <option value="">Status do serviço</option>
+				<option value="1">Na Espera</option>
+				<option value="2">Em Andamento</option>
+				<option value="3">Finalizado</option>
             </select>
+
+            <div><input type="text" name="cliente" id="cliente" placeholder="Nome do cliente" class="form-control"></div>
+            <div><input type="text" name="recepcionista" id="recepcionista" placeholder="Nome do Recepcionista" class="form-control"></div>
+            <div><input type="text" name="manutencao" id="manutencao" placeholder="Nome do executor do serviço" class="form-control"></div>
+            <div><input type="text" name="tipo" id="tipo" placeholder="Tipo do equipamento" class="form-control"></div>
+            <div><input type="text" name="marca" id="marca" placeholder="Marca do equipamento" class="form-control"></div>
+            <div><input type="text" name="cidade" id="cidade" placeholder="Cidade" class="form-control"></div>
+            <br>
+
+            <button type="buttom" class="btn-primary">Buscar</button>
+        	</form>
+
+
 		</div>
 	</div>
 </div><!--//Busca-->

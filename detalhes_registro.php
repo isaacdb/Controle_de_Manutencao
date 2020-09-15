@@ -1,8 +1,6 @@
 <?php
 	session_start();
 	$id_registro = $_POST['id'];
-
-
 ?>
 
 <!DOCTYPE html> 
@@ -28,6 +26,8 @@
 								$('#div_detalhes').html(data);
 								}
 					});
+
+
 			});
 
 		</script>
@@ -43,14 +43,26 @@
 
 <div class="container"><!--container-->
 
-<div class="div_registro" id="div_detalhes"><!--Feed-->
+	<div class="div_registro" id="div_detalhes"><!--Feed-->
 
-</div><!--//feed-->
+	</div><!--//feed-->
 
-<div class="div_busca"><!--Busca-->
+
+	<div class="div_busca"><!--Busca-->
 	<a href="registros.php"> VOLTAR</a>
+	<div>
+		<form method="post" action="att_status.php">
+				<input type="hidden" name="id_att" id="id_att" value="<?= $id_registro ?>" >
 
-</div><!--//Busca-->
+			<select name="status" id="status" required="requiored">
+				<option value="1">Na Espera</option>
+				<option value="2">Em Andamento</option>
+				<option value="3">Finalizado</option>
+    		</select>
+    		<button type="buttom" id="att_btn">Atualizar</button>
+    	</form>
+	</div>
+	</div><!--//Busca-->
 
 </div><!--//container-->
 
