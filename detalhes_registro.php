@@ -1,5 +1,9 @@
-<?php
+<?php 
 	session_start();
+	if(!isset($_SESSION['codigo'])){
+		header('Location: index.php?erro_login=1');
+	}
+
 	$id_registro = $_POST['id'];
 ?>
 
@@ -24,6 +28,14 @@
 							data:$('#form_id_registro').serialize(),
 							success: function(data){
 								$('#div_detalhes').html(data);
+
+									if($('#cargo').text() == "Manutenção"){
+										$('#painel_atualizar').show();
+									}
+									else{
+										$('#painel_atualizar').hide();
+									}
+
 								}
 					});
 
@@ -39,6 +51,7 @@
 </div>
 <form id="form_id_registro">
 	<input type="hidden" name="id" id="id" value="<?= $id_registro ?>" >
+	<span id="cargo" class="hidden"><?= $_SESSION['cargo']?></span>
 </form>
 
 <div class="container"><!--container-->
@@ -49,19 +62,37 @@
 
 
 	<div class="div_busca"><!--Busca-->
+
+	<div class="panel panel-default">
+	<div class="panel-body">
+	<div>
+
 	<a href="registros.php"> VOLTAR</a>
+
+	</div>
+	</div>
+	</div>
+
+	<div class="panel panel-default" id="painel_atualizar">
+	<div class="panel-body">
 	<div>
 		<form method="post" action="att_status.php">
 				<input type="hidden" name="id_att" id="id_att" value="<?= $id_registro ?>" >
 
 			<select name="status" id="status" required="requiored">
-				<option value="1">Na Espera</option>
+				<option value="1">Pendente</option>
 				<option value="2">Em Andamento</option>
 				<option value="3">Finalizado</option>
     		</select>
     		<button type="buttom" id="att_btn">Atualizar</button>
+    		<br><br>
+    		<input type="" name="consideracoes" id="consideracoes" placeholder="Considerações do funcionária que fez a manutenção">
+
     	</form>
 	</div>
+	</div>
+	</div>
+
 	</div><!--//Busca-->
 
 </div><!--//container-->

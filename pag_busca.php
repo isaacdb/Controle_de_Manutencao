@@ -1,5 +1,10 @@
 <?php
 	session_start();
+	
+	if(!isset($_SESSION['codigo'])){
+		header('Location: index.php?erro_login=1');
+	}
+
 	$status_busca = $_POST['status'];
 	$cliente_busca = $_POST['cliente'];
 	$recepcao_busca = $_POST['recepcionista'];
@@ -58,7 +63,14 @@
 </div><!--//feed-->
 
 <div class="div_busca"><!--Busca-->
-	<a href="registros.php"> VOLTAR</a>
+
+	<div class="panel panel-default">
+	<div class="panel-body">
+	<div>
+		<a href="registros.php"> VOLTAR</a>
+	</div>
+	</div>
+	</div>
 
 </div><!--//Busca-->
 

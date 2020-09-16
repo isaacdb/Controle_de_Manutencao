@@ -36,7 +36,7 @@
 
 			header('Location: registros.php');
 		}else{
-			header('Location: index.php?erro_usuario=1');
+			header('Location: index.php?erro_login=1');
 		}
 	}
 	else{

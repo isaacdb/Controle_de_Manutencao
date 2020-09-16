@@ -2,7 +2,7 @@
 session_start();
 
 	if(!isset($_SESSION['codigo'])){
-		header('Location: index.php?erro_usuario=1');
+		header('Location: index.php?erro_login=1');
 	}
 
 ?>
@@ -21,24 +21,40 @@ session_start();
 
 		<script type="text/javascript">
 			$(document).ready(function(){
-							
-				$('#btn_att').click(function(){
 
-					atualizaRegistros();
+			function atualizaRegistros(){
 
-				});
+				$.ajax({
+					url:'get_registro.php',
+					success: function(data){
 
-				function atualizaRegistros(){
-					$.ajax({
-						url:'get_registro.php',
-						success: function(data){
-							$('#equips').html(data);
+						$('#equips').html(data);
+
+						if($('#cargo').text() == "Recepção"){
+							$('#painel_novo_registro').show();
 						}
-					});
-				}
+						else{
+							$('#painel_novo_registro').hide();
+						}
 
-				atualizaRegistros();
-			});
+					}
+				});
+			
+
+		//	function resticaoRegistro(){
+			//	if($('#cargo').text.value() == "Recepção"){
+			//		$('#painel_novo_registro').show();
+			//	}
+			//	else{
+			//		$('#painel_novo_registro').hide();
+		//		}
+		//	}
+		};
+
+			//resticaoRegistro();
+			atualizaRegistros();
+
+		});
 
 		</script>
 
@@ -58,14 +74,14 @@ session_start();
 	<h4><?= $_SESSION['nome']?></h4>
 	<div>
 		Cargo: 
-		<span><?= $_SESSION['cargo']?></span>
+		<span id="cargo"><?= $_SESSION['cargo']?></span>
 	</div>
 	<br>
 	<div>Codigo de funcionario <?= $_SESSION['codigo']?></div>
 	</div>
 	</div>
 
-	<div class="panel panel-default">
+	<div class="panel panel-default " id="painel_novo_registro">
 	<div class="panel-body">
 	<div>
 		<a href="cadastramento.php">Novo Registro</a>
@@ -73,22 +89,22 @@ session_start();
 	</div>
 	</div>
 
-<a href="logout.php">Logout</a>
+	<div class="panel panel-default">
+	<div class="panel-body">
+	<div>
+		<a href="logout.php">Logout</a>
+	</div>
+	</div>
+	</div>
 
 
-</div><!--//Perfil-->
 
+</div><!--//Perfil-->	
 <div class="div_feed"><!--Feed-->
 
 	<div id="equips" class="list-group">
 		
-		<!--<a href="detalhes_registro.php" class = " list-group-item div_equip">	
-		<h4 class = "list-group-item-heading">Furadeira Makita</h4>
-		<p class = "list-group-item-text">Cliente: Roberto Cavalcante</p>
-		<p class = "list-group-item-text">Recepcionista: Abelardo Correa</p>
-		<small>Ultima atualização - 10/09/20</small>
-		<p class = "list-group-item-text">STATUS: aberto</p>	
-		</a>-->
+
 		
 	</div>
 
@@ -108,12 +124,12 @@ session_start();
 				<option value="3">Finalizado</option>
             </select>
 
-            <div><input type="text" name="cliente" id="cliente" placeholder="Nome do cliente" class="form-control"></div>
-            <div><input type="text" name="recepcionista" id="recepcionista" placeholder="Nome do Recepcionista" class="form-control"></div>
-            <div><input type="text" name="manutencao" id="manutencao" placeholder="Nome do executor do serviço" class="form-control"></div>
-            <div><input type="text" name="tipo" id="tipo" placeholder="Tipo do equipamento" class="form-control"></div>
-            <div><input type="text" name="marca" id="marca" placeholder="Marca do equipamento" class="form-control"></div>
-            <div><input type="text" name="cidade" id="cidade" placeholder="Cidade" class="form-control"></div>
+            <div><input type="" name="cliente" id="cliente" placeholder="Nome do cliente" class="form-control"></div>
+            <div><input type="" name="recepcionista" id="recepcionista" placeholder="Nome do Recepcionista" class="form-control"></div>
+            <div><input type="" name="manutencao" id="manutencao" placeholder="Nome do executor do serviço" class="form-control"></div>
+            <div><input type="" name="tipo" id="tipo" placeholder="Tipo do equipamento" class="form-control"></div>
+            <div><input type="" name="marca" id="marca" placeholder="Marca do equipamento" class="form-control"></div>
+            <div><input type="" name="cidade" id="cidade" placeholder="Cidade" class="form-control"></div>
             <br>
 
             <button type="buttom" class="btn-primary">Buscar</button>

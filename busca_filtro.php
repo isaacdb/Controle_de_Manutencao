@@ -77,26 +77,29 @@
 
 			 echo '<form method="post" action="detalhes_registro.php" class = "list-group-item">';
 			 echo '<h4 class = "list-group-item-heading">'.$registro['tipo'].'</h4>';
+			 echo '<p class = "list-group-item-text">#id '.$registro['id'].'</p>';
 			 echo '<input type="hidden" name="id" id="id" value="'.$registro['id'].'">';
-			 echo '<p class = "list-group-item-text">'.$registro['nome'].'</p>';
-			 echo '<p class = "list-group-item-text">'.$registro['id'].'</p>';
-			 echo '<p class = "list-group-item-text"> Recepcionista: '.$registro['nome'].'</p>';
-			 echo '<small> Ultima Att - '.$registro['data'].'</small>';
+			 echo '<p class = "list-group-item-text"> <small>cliente </small>'.$registro['nome'].'</p>';
+			 echo '<p class = "list-group-item-text"> <small>Recepcionista </small> '.$registro['recepcionista'].'</p>';
+			 echo '<small> Ultima Att - '.$registro['date_att'].'</small>';
 
 			if($registro['status'] == 1){
-			 	$status_string = "Em Aberto";
+				$style_text = "red";
+			 	$status_string = "Pendente";
 			 }
 			 else if($registro['status'] == 2){
+				$style_text = "#eead2d";#cor amarelo escuro
 			 	$status_string = "Em Andamento";
 			 }
 			 else if ($registro['status'] == 3) {
+				$style_text = "green";
 			 	$status_string = "Finalizado";
 			 }
 			 else{
 			 	$status_string = "Error";
 			 }
 			 
-			 echo '<p class = "list-group-item-text"> Status = '.$status_string.'</p>';
+			 echo '</br></br><p class = "list-group-item-text" style="color: '.$style_text.';">'.$status_string.'</p>';
 			 echo '<button type="buttom">Detalhes</button>';
 			 echo'</form>';
 

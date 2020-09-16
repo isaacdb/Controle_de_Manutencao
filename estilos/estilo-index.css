@@ -20,13 +20,6 @@ body{
 	width: 50%;
 }
 
-.div_registro {
-	width: 75%;
-	display: block;
-	border: 1px solid red;
-
-}
-
 .div_perfil {
 	width: 25%;
 }
@@ -38,5 +31,9 @@ body{
 .div_busca{
 	width: 25%;
 }
-.detalhes {
+#div_buscados{
+	width: 75%;
+}
+.div_registro{
+	width: 75%;
 }
