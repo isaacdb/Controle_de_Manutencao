@@ -3,10 +3,10 @@
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre o Projeto</a> •
- <a href="#-Funcionalidades">Funcionalidades</a> • 
- <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#funcionalidades">Funcionalidades</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
  <a href="#-como-executar">Como Executar</a> • 
- <a href="#-autor">Autor</a>
+ <a href="#autor">Autor</a>
 </p>
 
 ## 🎨 Layout
