@@ -2,10 +2,10 @@
 <p align="center"> Ferramenta de gestão e organização de um serviço de manutenção. </p>
 
 ## 🎨 Layout
-<div>
-<img align="center" width="80%" alt="Index_controle_manutencao" title="#Index_controle_manutencao" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/index.PNG">
+<div align="center">
+<img width="80%" alt="Index_controle_manutencao" title="#Index_controle_manutencao" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/index.PNG">
 
-<img align="center" width="80%" alt="Index_controle_manutencao" title="#Index_controle_manutencao" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/home.PNG">
+<img width="80%" alt="Index_controle_manutencao" title="#Index_controle_manutencao" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/home.PNG">
 <div>
 <h4 align="left"> 
 	🚧 Finished!  🚧
@@ -40,17 +40,17 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <h4>Pré requisitos</h4>
 <p>Faça o download e instalação do programa <a href="https://www.apachefriends.org/index.html"> XAMP </a></p>
 <p>Durante a instalação é nescessario instalar apenas os componentes Apache, MySql, PHP, PhpMyAdmin</p>
-<div><img width="60%" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/componentes.PNG"></div>
+<div><img width="60%" alt="componentes_xamp" title="#componentes_xamp" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/componentes.PNG"></div>
 
 <h4>Arquivos Nescessários</h4>
 <p>Faça o download do arquivo via <a href="https://github.com/isaacdb/Controle_de_Manutencao">GitHub/isaacdb</a></p>
 <p>Extraia o arquivo dentro da pasta htdocs, na origem da instalacao do XAMP</p>
 <h4>Execução</h4>
-<p>- Abra o XAMP, inicialize as açoes do Apache e MySql</p>
-<div><img width="60%" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/xamp.PNG"></div>
+<p>- Abra o XAMP, inicialize as ações do Apache e MySql</p>
+<div><img width="60%" alt="inciar_xamp" title="#inciar_xamp" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/xamp.PNG"></div>
 <p>- Abra o navegador e acesse o link localhost/Controle_de_Manutencao/index.php</p>
 <p>- Inicialmente clique no link Criar Database</p>
-<p>- Pronto, esta em funcionamento</p>
+<p>- Pronto, está em funcionamento</p>
 
 ### Autor
 Isaac Debiasi
