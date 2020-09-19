@@ -1,6 +1,9 @@
 body{
 }
-
+.btn_iniciar{
+	display: flex;
+	left: 0;
+}
 .container{
 	display: flex;
 }
@@ -12,12 +15,11 @@ body{
 }
 
 .div_login {
-	background: #f4f4f4;
-	width: 50%;
+	width: 49%;
 }
 
 .div_cadastro {
-	width: 50%;
+	width: 30%;
 }
 
 .div_perfil {

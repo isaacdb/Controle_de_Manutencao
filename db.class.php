@@ -12,7 +12,7 @@ class db {
 	private $senha = '';
 
 	//qual banco de dados
-	private $database = 'controle_manutencao';
+	private $database = 'bethateste';
 
 	public function conecta_mysql(){
 		//criar conexao

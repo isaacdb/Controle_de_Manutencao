@@ -19,6 +19,9 @@
 <body>
 
 <div class="nav">
+	<div class="btn_iniciar">
+		<a href="set_mysql.php">Criar Database.</a>
+	</div>
 	<h1>Controle de Manutenção de Equipamentos</h1>
 </div>
 
@@ -75,7 +78,7 @@
 </div>
 
 <div class="div_login">
-	Logar
+	<h3>Logar</h3><br>
 	<form method="post" action="valida_login.php">
 		<div class="form-group">
 			<input type="" class="form-control" id="campo_usuario" name="campo_usuario" placeholder="Cod. Funcionario" required="requiored" />
@@ -91,12 +94,13 @@
 		</div>
 
 								
-		<button type="buttom" class="btn btn-primary" id="btn_login">Entrar</button>
+		<button type="buttom" class="btn btn-primary form-control" id="btn_login">Entrar</button>
 
 		<br /><br />
 								
 	</form>
 </div>
+
 
 
 </div><!--//container-->
