@@ -15,7 +15,7 @@
 ---
 ## 💻 Sobre o projeto
 <p>Projeto desenvolvido como desafio durante o precesso seletivo da empresa Betha Sistemas.</p>
-<p>A aplicação possui todas as ações nescessarias para um bom funcionamento, como registro de novos funcionarios e clientes, atualização de serviços registrados, busca personalizada, segurança interna.</p>
+<p>A aplicação possui todas as ações necessárias para um bom funcionamento, como registro de novos funcionarios e clientes, atualização de serviços registrados, busca personalizada, segurança interna.</p>
 
 ---
 ### Features
