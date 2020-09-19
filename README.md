@@ -38,19 +38,18 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 # Como executar
 <h4>Pré requisitos</h4>
-Faça o download e instalação do programa [XAMP](https://www.apachefriends.org/index.html)
+Faça o download e instalação do programa <a href="https://www.apachefriends.org/index.html"> XAMP </a>
 Durante a instalação é nescessario instalar apenas os componentes Apache, MySql, PHP, PhpMyAdmin
 
 <h4>Arquivos Nescessários</h4>
-- <p>Faça o download do arquivo via [gitHub](https://github.com/isaacdb/Controle_de_Manutencao)</p>
+- <p>Faça o download do arquivo via <a href="https://github.com/isaacdb/Controle_de_Manutencao">GitHub/isaacdb</a></p>
 - <p>Extraia o arquivo dentro da pasta htdocs, na origem da instalacao do XAMP</p>
-[Git](https://git-scm.com)
 
 <h4>Execução</h4>
-- <p>Abra o XAMP, inicialize as açoes do Apache e MySql</p>
-- <p>Abra o navegador e acesse o link localhost/Controle_de_Manutencao/index.php</p>
-- <p>Inicialmente clique no link Criar Database</p>
-- <p>Pronto, esta em funcionamento</p>
+<p>- Abra o XAMP, inicialize as açoes do Apache e MySql</p>
+<p>- Abra o navegador e acesse o link localhost/Controle_de_Manutencao/index.php</p>
+<p>- Inicialmente clique no link Criar Database</p>
+<p>- Pronto, esta em funcionamento</p>
 
 ### Autor
 Isaac Debiasi
