@@ -51,7 +51,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <h4>Execução</h4>
 <p>- Abra o XAMP, inicialize as ações do Apache e MySql</p>
 <div><img width="60%" alt="inciar_xamp" title="#inciar_xamp" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/xamp.PNG"></div>
-<p>- Abra o navegador e acesse o link localhost/Controle_de_Manutencao/index.php</p>
+<p>- Abra o navegador e acesse o link localhost/Controle_de_Manutencao-master/index.php</p>
 <p>- Inicialmente clique no link Criar Database</p>
 <p>- Pronto, está em funcionamento</p>
 
