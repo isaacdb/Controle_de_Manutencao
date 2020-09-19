@@ -35,6 +35,7 @@
 - [x] Busca personalizada
 - [x] Restrição p/ registro/atualização de serviço conforme cargo do usuario
 
+---
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
@@ -64,5 +65,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <p>- Inicialmente clique no link Criar Database</p>
 <p>- Pronto, está em funcionamento</p>
 
+---
 ### Autor
 Isaac Debiasi
