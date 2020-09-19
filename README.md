@@ -44,6 +44,7 @@ Durante a instalação é nescessario instalar apenas os componentes Apache, MyS
 <h4>Arquivos Nescessários</h4>
 - <p>Faça o download do arquivo via [gitHub](https://github.com/isaacdb/Controle_de_Manutencao)</p>
 - <p>Extraia o arquivo dentro da pasta htdocs, na origem da instalacao do XAMP</p>
+[Git](https://git-scm.com)
 
 <h4>Execução</h4>
 - <p>Abra o XAMP, inicialize as açoes do Apache e MySql</p>
