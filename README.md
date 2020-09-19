@@ -6,11 +6,13 @@
 <img width="80%" alt="Index_controle_manutencao" title="#Index_controle_manutencao" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/index.PNG">
 
 <img width="80%" alt="Index_controle_manutencao" title="#Index_controle_manutencao" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/home.PNG">
-<div>
+</div>
+
 <h4 align="left"> 
 	🚧 Finished!  🚧
 </h4>
 
+---
 ## 💻 Sobre o projeto
 <p>Projeto desenvolvido como desafio durante o precesso seletivo da empresa Betha Sistemas.</p>
 <p>A aplicação possui todas as ações nescessarias para um bom funcionamento, como registro de novos funcionarios e clientes, atualização de serviços registrados, busca personalizada, segurança interna.</p>
@@ -36,6 +38,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [MySQL]
 - [XAMPP]
 
+---
 # Como executar
 <h4>Pré requisitos</h4>
 <p>Faça o download e instalação do programa <a href="https://www.apachefriends.org/index.html"> XAMP </a></p>
