@@ -23,7 +23,7 @@
 ---
 ## 💻 Sobre o projeto
 <p>Projeto desenvolvido como desafio durante o precesso seletivo da empresa Betha Sistemas.</p>
-<p>A aplicação possui todas as ações necessárias para um bom funcionamento, como registro de novos funcionarios e clientes, atualização de serviços registrados, busca personalizada, segurança interna.</p>
+<p>A aplicação possui todas as ações necessárias para um bom funcionamento, como registro de novos funcionários e clientes, atualização de serviços registrados, busca personalizada, segurança interna.</p>
 
 ---
 ## Funcionalidades
@@ -52,7 +52,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 # Como executar
 <h4>Pré requisitos</h4>
 <p>Faça o download e instalação do programa <a href="https://www.apachefriends.org/index.html"> XAMP </a></p>
-<p>Durante a instalação é nescessario instalar apenas os componentes Apache, MySql, PHP, PhpMyAdmin</p>
+<p>Durante a instalação é necessário instalar apenas os componentes Apache, MySql, PHP, PhpMyAdmin</p>
 <div><img width="60%" alt="componentes_xamp" title="#componentes_xamp" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/componentes.PNG"></div>
 
 <h4>Arquivos Nescessários</h4>
