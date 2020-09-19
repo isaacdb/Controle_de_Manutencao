@@ -36,7 +36,7 @@
 - [x] Restrição p/ registro/atualização de serviço conforme cargo do usuario
 
 ---
-### 🛠 Tecnologias
+### Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
