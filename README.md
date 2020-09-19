@@ -1,6 +1,14 @@
 # Controle_de_Manutencao
 <p align="center"> Ferramenta de gestão e organização de um serviço de manutenção. </p>
 
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre o Projeto</a> •
+ <a href="#-funcionalidades">Funcionalidades</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-como-executar">Como Executar</a> • 
+ <a href="#-autor">Autor</a>
+</p>
+
 ## 🎨 Layout
 <div align="center">
 <img width="80%" alt="Index_controle_manutencao" title="#Index_controle_manutencao" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/index.PNG">
@@ -18,7 +26,7 @@
 <p>A aplicação possui todas as ações necessárias para um bom funcionamento, como registro de novos funcionarios e clientes, atualização de serviços registrados, busca personalizada, segurança interna.</p>
 
 ---
-### Features
+### Funcionalidades
 
 - [x] Cadastro de usuário
 - [x] Verificação de usuario
@@ -34,6 +42,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Html]
 - [CSS]
 - [PHP]
+- [Bootstrap]
 - [JavaScript]
 - [MySQL]
 - [XAMPP]
