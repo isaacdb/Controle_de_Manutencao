@@ -3,7 +3,7 @@
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre o Projeto</a> •
- <a href="#-funcionalidades">Funcionalidades</a> • 
+ <a href="#-Funcionalidades">Funcionalidades</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-como-executar">Como Executar</a> • 
  <a href="#-autor">Autor</a>
@@ -26,7 +26,7 @@
 <p>A aplicação possui todas as ações necessárias para um bom funcionamento, como registro de novos funcionarios e clientes, atualização de serviços registrados, busca personalizada, segurança interna.</p>
 
 ---
-### Funcionalidades
+## Funcionalidades
 
 - [x] Cadastro de usuário
 - [x] Verificação de usuario
