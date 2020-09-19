@@ -2,14 +2,11 @@
 <p align="center"> Ferramenta de gestão e organização de um serviço de manutenção. </p>
 
 ## 🎨 Layout
+<div style="display: flex; align-items: flex-start; justify-content: center;">
+<img width="45%" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/index.PNG">
 
-<img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/feed.PNG">
-
-<img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/busca.PNG">
-
-<img width="auto" src="https://github.com/isaacdb/CloneTwitter/blob/master/pics_clone_twitter/inscrevase.PNG">
-
-
+<img width="45%" src="https://github.com/isaacdb/Controle_de_Manutencao/blob/master/ScreenShots/home.PNG">
+<div>
 <h4 align="left"> 
 	🚧 Finished!  🚧
 </h4>
@@ -41,18 +38,18 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 # Como executar
 <h4>Pré requisitos</h4>
-Faça o download e instalação do programa -[XAMP]https://www.apachefriends.org/index.html
+Faça o download e instalação do programa [XAMP](https://www.apachefriends.org/index.html)
 Durante a instalação é nescessario instalar apenas os componentes Apache, MySql, PHP, PhpMyAdmin
 
 <h4>Arquivos Nescessários</h4>
-- Faça o download do arquivo via gitHub: https://github.com/isaacdb/Controle_de_Manutencao
-- Extraia o arquivo dentro da pasta htdocs, na origem da instalacao do XAMP
+- <p>Faça o download do arquivo via [gitHub](https://github.com/isaacdb/Controle_de_Manutencao)</p>
+- <p>Extraia o arquivo dentro da pasta htdocs, na origem da instalacao do XAMP</p>
 
 <h4>Execução</h4>
-- Abra o XAMP, inicialize as açoes do Apache e MySql
-- Abra o navegador e acesse o link localhost/Controle_de_Manutencao/index.php
-- Inicialmente clique no link Criar Database
-- Pronto, esta em funcionamento
+- <p>Abra o XAMP, inicialize as açoes do Apache e MySql</p>
+- <p>Abra o navegador e acesse o link localhost/Controle_de_Manutencao/index.php</p>
+- <p>Inicialmente clique no link Criar Database</p>
+- <p>Pronto, esta em funcionamento</p>
 
 ### Autor
 Isaac Debiasi
